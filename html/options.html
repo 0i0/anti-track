@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Anti-track Options</title>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/options.js"></script>
+  </head>
+  <body>
+  <h1>Options</h1>
+  <div id="status"></div>
+  <form>
+    Balcklist:<br />
+    <textarea spellcheck="false" id="blacklist" cols="60" rows="10"></textarea><br />
+    Balcklist filter:<br />
+    <textarea spellcheck="false" id="filters" cols="60" rows="10"></textarea>
+    <input id="submit" type="button" value="Save Options" />
+  </form>
+  <h2>Help</h2>
+  <p>
+    the way it works is that it is configurde to blacklist sites using regular expressions
+    you can than easy the blacklisting by providing whitelist filters
+    </p>
+  <p>
+
+    for example:<br/>
+      black list all domains matching the word: <b>google.</b> (this include google.com, www.google.de, mail.google.com , etc)
+      <br/>
+      than you can white list a subset of this by providing the white list filter <b>mail.google.</b> this include (mail.google.com, mail.google.de etc)
+      <br/>
+      than if the host remains on the black list all cookies are removed for the request
+  </p>
+  <a href="https://github.com/">Home page</a>
+  <a href="installed.html">reset Defaults</a>
+</body>
+</html>

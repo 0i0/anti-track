@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Welcome to anti-track</title>
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/firsttime.js"></script>
+</head>
+<body>
+  <h1>Welcome to anti-track</h1>
+  <p>
+    anit-track is a browser extension to limit the amount of data that you leak while surfing
+    it is by default configured to remove the cookies which are send to google when you search while loggedin to gmail
+  </p>
+  <p>
+    the way it works is that it is configurde to blacklist sites using regular expressions
+    you can than easy the blacklisting by providing whitelist filters
+    </p>
+  <p>
+
+    for example:<br/>
+      black list all domains matching the word: <b>google.</b> (this include google.com, www.google.de, mail.google.com , etc)
+      <br/>
+      than you can white list a subset of this by providing the white list filter <b>mail.google.</b> this include (mail.google.com, mail.google.de etc)
+      <br/>
+      than if the host remains on the black list all cookies are removed for the request
+  </p>
+</body>
+</html>
+
+
+
+<a href="options.html">options</a>
